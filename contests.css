@@ -1,0 +1,166 @@
+*{
+    font-family: monospace;
+    background-color: #161616;
+}
+
+#logotext{
+font-size: 24px;
+font-weight: 600;
+color: #FFFFFF;
+}
+
+#blue{
+    color:#47C3F8; 
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anchors{
+    margin-left: 1010px;
+}
+a{
+    text-decoration:none ;
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: 20px;
+    color: #FFFFFF;
+}
+
+a:link,
+a:visited {
+    color: #FFFFFF; /* Default color for links */
+    /* Other link styles */
+}
+
+a.active {
+    color: #47C3F8; /* Blue color for the active link */
+    /* Additional styles for the active link */
+}
+
+a:hover {
+    color: #ffffff; /* Hover color for all links */
+}
+
+#mainheading{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   h1{
+    color: #FFFFFF;
+      font-size: 50px;
+      font-weight: 300;
+    }
+    .fullbody{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 80px;
+      
+    }
+  #textanimation{
+    color: #161616;
+    -webkit-text-stroke: 0.8px #47C3F8;
+  }
+
+    #ptitle{
+      font-size: 24px;
+      color: #c6eeff;
+      margin-left: 1.5%;
+      margin-top: 5%;
+      margin-bottom: 3%;
+    }
+
+    .cards-container {
+        margin-left: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+        grid-gap: 40px; /* Adjust the gap between cards as needed */
+        justify-content: center; /* Center cards horizontally */
+        align-items: center;
+      }
+      
+      .card {
+        width: 250px; /* Set a fixed width for all cards */
+        height: 300px; /* Set a fixed height for all cards */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        background: #212121;
+        border: 1px solid #313131;
+        transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        margin: 0; /* Remove margin to ensure uniform spacing */
+        display: flex; /* Make the card a flex container */
+        flex-direction: column; /* Stack child elements vertically */
+      }
+      
+      .textinside {
+        flex-grow: 1; /* Allow this part to expand and fill the remaining space */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        color: #e8e8e8;
+        padding: 10px;
+      }
+      
+      .textinside .heading {
+        font-weight: 700;
+        font-size: 18px; /* Set a standard font size for headings */
+      }
+      
+      .textinside .para {
+        line-height: 1.5;
+        color: #c6eeff;
+      }
+      
+      .textinside .btn {
+        color: #000;
+        text-decoration: none;
+        padding: 8px 12px; /* Adjust padding as needed */
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        background: #47C3F8;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      .card:hover {
+        box-shadow: 0 0 20px rgba(9, 117, 241, 0.8);
+        border-color: #47C3F8;
+      }
+      
+      .textinside .btn:hover {
+        outline: 2px solid #e8e8e8;
+        background: transparent;
+        color: #e8e8e8;
+      }
+      
+      .textinside .btn:active {
+        box-shadow: none;
+      }
+      
+
+      .reveal{
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 2s ease;
+      }
+    
+      .reveal.active{
+        transform: translateY(0px);
+        opacity: 1;
+      }
+
+      footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #c6eeff;
+        margin-top: 20px;
+      }
